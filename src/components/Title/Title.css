@@ -1,0 +1,81 @@
+.title h3{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    color: #353335;
+    transition: 0.5s;
+}
+.title{
+    margin:auto;
+    margin-top: 100px;
+    width: 250px;
+    height: 70px;
+    padding: 15px 0;
+    border: 1px solid #f37135;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+.title::before, .title::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: #f37135;
+    z-index: -1;
+}
+.title::before{
+    left: -30px;
+}
+.title::after{
+    right: -30px;
+}
+.title:hover::before{
+    animation: left-move 0.5s linear forwards;
+}
+.title:hover::after{
+    animation: right-move 0.5s linear forwards;
+}
+.title:hover h3{
+    color: #fff;
+    transition-delay:0.5s ;
+}
+@keyframes left-move {
+    0%{
+        width: 12px;
+        height: 12px;
+        left: -30px;
+    }
+    100%{
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        border-radius: 0;
+    }
+}
+@keyframes right-move {
+    0%{
+        width: 12px;
+        height: 12px;
+        right: -30px;
+    }
+    100%{
+        width: 50%;
+        height: 100%;
+        right: 50%;
+        border-radius: 0;
+    }
+}
+@media (max-width:280px) {
+    .title{
+        width: 200px;
+    }
+    .title::before{
+        left: -20px;
+    }
+    .title::after{
+        right: -20px;
+    }
+}

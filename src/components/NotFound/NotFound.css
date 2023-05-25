@@ -1,0 +1,13 @@
+.notfound{
+    width: 75%;
+}
+@media (max-width:450px) {
+    .notfound{
+        width: 90%;
+    }
+}
+@media (max-width:280px) {
+    .notfound{
+        font-size: 18px !important;
+    }
+}

@@ -1,0 +1,29 @@
+.navbar{
+    background-color: #353335 !important;
+}
+.navbar .logo{
+    font-family: 'Carter One', cursive;
+    background: -webkit-linear-gradient(left,#f37135,#fff,#f37135);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar .btn{
+    border: 1px solid #f37135 !important;
+    color: #f37135 !important;
+}
+.navbar .btn:hover{
+    background-color: #f37135 !important;
+    color: #fff !important;
+}
+.navbar-toggler{
+    padding: 8px 15px;
+    border: 1px solid #f37135;
+    transition: 0.5s;
+}
+.navbar-toggler .bar-icon{
+    color: #fff;
+}
+.navbar-toggler:hover{
+    background-color: #f37135;
+}
+

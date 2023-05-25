@@ -1,0 +1,14 @@
+.filter-btn{
+    border: 1px solid #f37135;
+    width: 90px;
+    height: 40px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.filter-btn:focus{
+    outline: 1px solid #f37135;
+}
+.active{
+    color: #fff;
+    background-color: #f37135;
+}
